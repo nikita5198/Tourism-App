@@ -1,0 +1,38 @@
+.header{
+    height: 12vh;
+    display: flex;
+    border-bottom: 2px solid #e6e7eb;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo1, .logo2, .logo3 ,.logo4{
+    height: 68px;
+    margin: auto 20px;
+}
+.logo3{
+    margin-right: 300px;
+
+}
+.subLogo{
+    display: flex;
+    justify-content: flex-start;
+}
+.navItems{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    margin: auto 1rem;
+}
+.backImg{
+    margin-top: none;
+    height:28vh;
+    padding: none;
+}
