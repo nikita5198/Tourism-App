@@ -50,6 +50,24 @@ li{
     }
 }
 
+.plane{
+    position: absolute;
+    bottom: 120px;
+    left: 0%;
+    width:160px ;
+    height: 48px;
+    background-image: url("../assets/flight.webp");
+    animation:  plane 10s infinite linear;
+}
+@keyframes plane{
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 100%;
+    }
+
+}
 .train{
     position: absolute;
     bottom: 25px;

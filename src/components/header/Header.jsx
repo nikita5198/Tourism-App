@@ -30,6 +30,7 @@ function Header() {
       </div>
     </div>
     <div className="backImg">
+    <div className="plane"></div>
         <div className="train"></div>
         <div className="bus"></div>
     </div>
