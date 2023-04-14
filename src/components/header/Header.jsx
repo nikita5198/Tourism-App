@@ -3,8 +3,7 @@ import logo from "../assets/images.png";
 import azadi from "../assets/azadi-moh.jpg";
 import G20 from "../assets/G20-logo.webp";
 import logo2 from '../assets/img.jpg'
-import backImg from '../assets/tourism-view.png'
-import sea from '../assets/sea.png'
+
 import "./header.css";
 function Header() {
   return (
