@@ -61,16 +61,16 @@ function Header() {
         </div>
         <div className="container-fluid nav-icon-container">
           <ul className="nav-icons-wrap CenterIconBox">
-            <li><MdFlight /></li>
-            <li><FaHotel /></li>
-            <li><FaBusAlt /></li>
-            <li><MdAirlineSeatReclineExtra /></li>
-            <li><BsTrainFreightFrontFill /></li>
-            <li><FaHandHoldingMedical /></li>
-            <li><GiBookmarklet /></li>
-            <li><GiCruiser /></li>
-            <li><GiIndianPalace /></li>
-            <li><GiElephantHead /></li>
+          <li><MdFlight  className="liItem"/><p>Flights</p></li>
+            <li><FaHotel className="liItem"/><p>Hotels</p></li>
+            <li><FaBusAlt className="liItem"/><p>Busses</p></li>
+            <li><MdAirlineSeatReclineExtra className="liItem"/><p>Lounge</p></li>
+            <li><BsTrainFreightFrontFill className="liItem"/><p>Buddhist Train</p></li>
+            <li><FaHandHoldingMedical className="liItem"/><p>Medical Tourism</p></li>
+            <li><GiBookmarklet className="liItem"/><p>TAG</p></li>
+            <li><GiCruiser className="liItem"/><p>Cruisers</p></li>
+            <li><GiIndianPalace className="liItem"/><p>Visit India</p></li>
+            <li><GiElephantHead className="liItem"/><p>Golden Chariot</p></li>
           </ul>
         </div>
      </div>
