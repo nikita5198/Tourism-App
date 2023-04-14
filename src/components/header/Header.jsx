@@ -30,11 +30,13 @@ function Header() {
       </div>
     </div>
     <div className="backImg">
-        <img src={backImg} alt="BackgroundImage" />
+        <div className="train"></div>
+        <div className="bus"></div>
     </div>
 
     <div className="seaContainer">
-        <img className="sea" src={sea} alt="sea" />
+        {/* <img className="sea" src={sea} alt="sea" /> */}
+        <div className="cruise"></div>
     </div>
     </>
   );
