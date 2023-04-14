@@ -142,3 +142,16 @@ li{
         left: 100%;
     }
 }
+
+/* frorm component styles */
+.Home-Form-Section{
+    border: 1px solid rgb(5, 5, 92);
+    height: 42vh;
+    background-color: rgb(5, 5, 92);
+}
+
+.nav-icons-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
