@@ -13,6 +13,7 @@ import {GiCruiser} from 'react-icons/gi'
 import {BsTrainFreightFrontFill} from 'react-icons/bs'
 import {GiIndianPalace} from 'react-icons/gi'
 import {GiElephantHead} from 'react-icons/gi'
+import TrendingPack from "../TrendingPackages/TrendingPack";
 import "./header.css";
 function Header() {
   return (
@@ -74,6 +75,7 @@ function Header() {
           </ul>
         </div>
      </div>
+     <TrendingPack/>
     </>
   );
 }

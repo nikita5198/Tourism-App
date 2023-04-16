@@ -169,7 +169,7 @@ li{
 }
 .liItem:hover{
   transform: translateY(-1.75rem);
-  
+  /* transition: transform 250ms; */
 }
 .nav-icons-wrap li:hover{
   color: gold;

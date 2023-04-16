@@ -1,0 +1,15 @@
+.imageContainer{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img1{
+    margin: 1rem;
+}
+
+.img2{
+    margin: 1rem;
+    width: 360px;
+}
