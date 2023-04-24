@@ -14,7 +14,9 @@ import {BsTrainFreightFrontFill} from 'react-icons/bs'
 import {GiIndianPalace} from 'react-icons/gi'
 import {GiElephantHead} from 'react-icons/gi'
 import TrendingPack from "../TrendingPackages/TrendingPack";
+import FAQ from "../faqContainer/FAQ";
 import "./header.css";
+import ContactUs from "../contactus/ContactUs";
 function Header() {
   return (
     <>
@@ -76,6 +78,8 @@ function Header() {
         </div>
      </div>
      <TrendingPack/>
+     <FAQ/>
+    <ContactUs/>
     </>
   );
 }
