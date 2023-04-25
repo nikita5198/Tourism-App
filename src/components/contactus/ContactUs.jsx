@@ -16,7 +16,7 @@ function ContactUs() {
             <input type="text" placeholder='Email' /><br />
             <input type="text" placeholder='Your Phone' /><br />
             <input type="text" placeholder='Place of Origin' /><br />
-            <textarea name="" id="" cols="38" rows="3">Message</textarea>
+            <textarea name="" id="" cols="38" rows="2">Message</textarea>
             <button>Send Now <BsSendFill/></button>
         </form>
       </div>

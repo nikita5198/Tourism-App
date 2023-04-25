@@ -17,6 +17,7 @@ import TrendingPack from "../TrendingPackages/TrendingPack";
 import FAQ from "../faqContainer/FAQ";
 import "./header.css";
 import ContactUs from "../contactus/ContactUs";
+import Footer from "../Footer/Footer";
 function Header() {
   return (
     <>
@@ -80,6 +81,7 @@ function Header() {
      <TrendingPack/>
      <FAQ/>
     <ContactUs/>
+    <Footer/>
     </>
   );
 }
