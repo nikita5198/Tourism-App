@@ -1,15 +1,19 @@
 .imageContainer{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .img1{
     margin: 1rem;
+    height: 280px;
+}
+
+.img1:hover{
+    
 }
 
 .img2{
     margin: 1rem;
-    width: 360px;
+height: 260px;
 }

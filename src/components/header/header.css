@@ -1,10 +1,11 @@
 .header{
-    height: 12vh;
+    height: 11vh;
     display: flex;
-    border-bottom: 2px solid #e6e7eb;
+    /* border-bottom: 2px solid #e6e7eb; */
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    position: relative;
 }
 
 .logo1, .logo2, .logo3 ,.logo4{
@@ -36,10 +37,10 @@ li{
     overflow: hidden;
     background-image: url("../assets/tourism-view.png");
     margin-top: none;
-    height:28vh;
+    height:25vh;
     padding: none;
     background-position: 0px;
-    animation: bgMove 50s linear infinite;
+    animation: bgMove 60s linear infinite;
 }
 @keyframes bgMove{
     0%{
@@ -57,7 +58,7 @@ li{
     width:160px ;
     height: 48px;
     background-image: url("../assets/flight.webp");
-    animation:  plane 5s infinite linear;
+    animation:  plane 10s infinite linear;
 }
 @keyframes plane{
     0%{
@@ -79,7 +80,7 @@ li{
 }
 @keyframes train{
     0%{
-        left: -10%;
+        left: -80%;
     }
     100%{
         left: 100%;
@@ -95,7 +96,7 @@ li{
     width: 150px;
     height: 58px;
     background-image: url("../assets//bus.webp");
-    animation: bus 10s infinite linear;
+    animation: bus 30s infinite linear;
 }
 @keyframes bus{
     0%{
@@ -110,7 +111,7 @@ li{
     overflow: hidden;
     background-image: url("../assets/sea.png");
     margin-top: none;
-    height:20vh;
+    height:15vh;
     padding: none;
     background-position: 0px;
     animation: sea 30s linear infinite;
@@ -146,7 +147,7 @@ li{
 /* frorm component styles */
 .Home-Form-Section{
     border: 1px solid rgb(5, 5, 92);
-    height: 42vh;
+    height: 38vh;
     background-color: rgb(5, 5, 92);
 }
 
@@ -173,4 +174,34 @@ li{
 }
 .nav-icons-wrap li:hover{
   color: gold;
+}
+
+.inputForCont{
+ /* border: 1px solid red; */
+ width: 80%;
+ height: 5rem;
+ background-color: white;
+ margin-left: 10%;
+ border-radius: 5px;
+}
+.inputText{
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 50%;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.con1{
+    margin-left: 65px;
+    font-size: 16px;
+    margin-right: 20px;
+width: 300px;
+background-color: white;
+margin-top: 30px;
+height: 40px;
+border: none;
+border-bottom: 1px solid #666;
+padding: 0;
+color: #666;
 }

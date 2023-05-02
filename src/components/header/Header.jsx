@@ -1,8 +1,5 @@
 import React from "react";
-import logo from "../assets/images.png";
-import azadi from "../assets/azadi-moh.jpg";
-import G20 from "../assets/G20-logo.webp";
-import logo2 from '../assets/img.jpg'
+
 import { MdFlight } from 'react-icons/md';
 import { FaHotel } from 'react-icons/fa';
 import {FaBusAlt} from 'react-icons/fa'
@@ -13,15 +10,12 @@ import {GiCruiser} from 'react-icons/gi'
 import {BsTrainFreightFrontFill} from 'react-icons/bs'
 import {GiIndianPalace} from 'react-icons/gi'
 import {GiElephantHead} from 'react-icons/gi'
-import TrendingPack from "../TrendingPackages/TrendingPack";
-import FAQ from "../faqContainer/FAQ";
-import "./header.css";
-import ContactUs from "../contactus/ContactUs";
-import Footer from "../Footer/Footer";
+
+// import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function Header() {
   return (
     <>
-      <div className="header">
+      {/* <div className="header">
       <div className="mainLogo">
         <img className="logo1" src={logo} alt="logo" />
       </div>
@@ -33,14 +27,21 @@ function Header() {
         
          <div className="navItems">
             <ul className="list">
-            <li>Contact Us</li>
+            <li>
+              <select name="" id="" style={{border:"nonenpm "}}>
+              <option value="">Contact Us</option>
+                <option value=""><AiTwotonePhone/> 1800110139</option>
+                <option value=""><AiTwotonePhone/> 0755-6698100-4090400</option>
+                <option value=""><MdEmail/>tourism@irctc.com</option>
+              </select>
+            </li>
             <li>Login</li>
             <li>side</li>
             </ul>
             <img className="logo4" src={logo2} alt="logo2" />
         </div>
       </div>
-    </div>
+    </div> */}
     <div className="backImg">
     <div className="plane"></div>
         <div className="train"></div>
@@ -77,11 +78,15 @@ function Header() {
             <li><GiElephantHead className="liItem"/><p>Golden Chariot</p></li>
           </ul>
         </div>
+        
+        <div className='inputForCont'>
+          <input type='text' placeholder='Enter Origin/Destination City' className='inputText' /> 
+            <select className="con1" name="sector">
+              <option className="buttonsearch" value="Domestic">Domestic</option>
+          <option className="buttonsearch" value="International">International</option></select>
+          <button>submit</button>
+          </div>
      </div>
-     <TrendingPack/>
-     <FAQ/>
-    <ContactUs/>
-    <Footer/>
     </>
   );
 }

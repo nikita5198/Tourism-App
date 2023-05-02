@@ -104,8 +104,8 @@ function Footer() {
       <div>
         <footer className='footer'>
            <div>
-            <p>© 2022 IRCTC | All Right Reserved. <br />
-Browser Support IE10 and IE11 and Chrome 5.0 and above Version</p>
+            <p style={{fontSize:"15px"}}>© 2022 IRCTC | All Right Reserved. <br />
+Browser Support IE10 and IE11 and Chrome 5.0 <br /> and above Version</p>
            </div>
            <div className='iconContainer'>
             <FaFacebookF style={{backgroundColor:"rgb(5, 5, 92)"}} className='icon'/>
@@ -116,7 +116,7 @@ Browser Support IE10 and IE11 and Chrome 5.0 and above Version</p>
             <FaPinterest style={{backgroundColor:"#c20a41"}} className='icon'/>
             <FaTumblr style={{backgroundColor:"rgb(5, 5, 92)"}} className='icon'/>
             <FaTwitter style={{backgroundColor:"#26c4f0"}} className='icon'/>
-            <p style={{color:"black"}}>Get Connected with us on social networks</p>
+            <p style={{color:"black",textAlign:"center",fontSize:"15px",marginTop:"0px",marginBottom:"5px"}}>Get Connected with us on social networks</p>
            </div>
 
            <div>
