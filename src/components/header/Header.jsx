@@ -10,38 +10,9 @@ import {GiCruiser} from 'react-icons/gi'
 import {BsTrainFreightFrontFill} from 'react-icons/bs'
 import {GiIndianPalace} from 'react-icons/gi'
 import {GiElephantHead} from 'react-icons/gi'
-
-// import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function Header() {
   return (
-    <>
-      {/* <div className="header">
-      <div className="mainLogo">
-        <img className="logo1" src={logo} alt="logo" />
-      </div>
-      <div className="subLogo">
-       
-       <div> <img className="logo2" src={azadi} alt="logo" /> </div>
-        <div><img className="logo3" src={G20} alt="g20" /></div>
-     
-        
-         <div className="navItems">
-            <ul className="list">
-            <li>
-              <select name="" id="" style={{border:"nonenpm "}}>
-              <option value="">Contact Us</option>
-                <option value=""><AiTwotonePhone/> 1800110139</option>
-                <option value=""><AiTwotonePhone/> 0755-6698100-4090400</option>
-                <option value=""><MdEmail/>tourism@irctc.com</option>
-              </select>
-            </li>
-            <li>Login</li>
-            <li>side</li>
-            </ul>
-            <img className="logo4" src={logo2} alt="logo2" />
-        </div>
-      </div>
-    </div> */}
+    <div style={{marginTop:"80px"}}>
     <div className="backImg">
     <div className="plane"></div>
         <div className="train"></div>
@@ -84,10 +55,10 @@ function Header() {
             <select className="con1" name="sector">
               <option className="buttonsearch" value="Domestic">Domestic</option>
           <option className="buttonsearch" value="International">International</option></select>
-          <button>submit</button>
+          <button className='btnStyle'>submit</button>
           </div>
      </div>
-    </>
+    </div>
   );
 }
 

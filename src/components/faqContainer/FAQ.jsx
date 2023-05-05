@@ -87,7 +87,7 @@ function FAQ() {
 
        <div  className='desContainer'>
        <select className='yourQues'>
-        <option value="">
+        <option className='desCon' value="">
            <button>How do i book a domestic and international tour package?</button>
         </option>
         <option value="">

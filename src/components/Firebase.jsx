@@ -1,13 +1,10 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from 'firebase/app';
+import { getDatabase } from 'firebase/database';
+import { getFirestore, addDoc, collection } from 'firebase/firestore';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
+  // your Firebase config
   apiKey: "AIzaSyArXm9Zy-yR6hCGLR4zS3Kfv7vA86t-anE",
   authDomain: "niks-tourism.firebaseapp.com",
   projectId: "niks-tourism",
@@ -17,9 +14,35 @@ const firebaseConfig = {
   measurementId: "G-ERE4EVB3JK"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const db = getDatabase();
+const auth = getAuth();
+const firestore = getFirestore();
 
-export const auth = getAuth(app);
-export default app;
+const handleLogin = (email, password) => {
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+      console.log("User successfully logged in: ", user);
+
+      // store user data in Firestore
+      addDoc(collection(db, "users"), {
+        uid: user.uid,
+        email: user.email,
+        displayName: user.displayName,
+        photoURL: user.photoURL
+      })
+      .then(() => {
+        console.log("User data added to Firestore");
+      })
+      .catch((error) => {
+        console.error("Error adding user data to Firestore: ", error);
+      });
+    })
+    .catch((error) => {
+      console.error("Error logging in: ", error);
+    });
+};
+
+export { app, db, auth, firestore, handleLogin};

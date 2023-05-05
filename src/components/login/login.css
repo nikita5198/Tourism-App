@@ -1,25 +1,31 @@
 .loginMainContainer{
-    box-shadow: 4px 4px 4px 0 #edf4f5, 0 4px 8px 4px #edf4f5;
+    /* box-shadow: 4px 4px 4px 0 #edf4f5, 0 4px 8px 4px #edf4f5; */
     width: 30vw;
     height: 60vh;
-    /* position:fixed; */
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .loginSubContainer{
-    margin:2rem 2.5rem;
-    padding: 8px;
-    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 4px 4px 4px 0 #edf4f5, 0 4px 8px 4px #edf4f5;
-    width: 80%;
+    /* width: 80%; */
+    padding-left:5% ;
+    padding-right: 5%;
     display: flex;
    
     justify-content: space-around;
     align-items: center;
 }
 .logButton{
+    width: 50%;
   border: none;
   background-color: #fff;
-  padding: 0.5rem;
+  
+ 
 }
 
 .logButton:hover{
@@ -28,7 +34,7 @@
 }
 .inputContent{
     font-weight: 600;
-    /* padding: 1rem auto ; */
+    padding: 1rem auto ;
 }
 .loginInputContainer{
     margin: auto 2rem;

@@ -9,11 +9,18 @@
     height: 280px;
 }
 
-.img1:hover{
-    
+.img1 {
+  width: 28%;
+  height: 28%;
+  /* margin: o.3rem; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.img1:hover {
+  transform: scale(1.1);
 }
 
 .img2{
     margin: 1rem;
-height: 260px;
+height: 220px;
 }

@@ -1,5 +1,5 @@
 .header{
-    height: 11vh;
+    height: 12vh;
     display: flex;
     /* border-bottom: 2px solid #e6e7eb; */
     justify-content: space-between;
@@ -37,7 +37,8 @@ li{
     overflow: hidden;
     background-image: url("../assets/tourism-view.png");
     margin-top: none;
-    height:25vh;
+    width: 1920px;
+    height:165px;
     padding: none;
     background-position: 0px;
     animation: bgMove 60s linear infinite;
@@ -147,7 +148,7 @@ li{
 /* frorm component styles */
 .Home-Form-Section{
     border: 1px solid rgb(5, 5, 92);
-    height: 38vh;
+    height: 35vh;
     background-color: rgb(5, 5, 92);
 }
 
@@ -205,3 +206,18 @@ border-bottom: 1px solid #666;
 padding: 0;
 color: #666;
 }
+
+.closeBtn{
+    /* margin-left: 97%; */
+    /* margin-bottom: 5px; */
+    position: relative;
+  top: -15px;
+  right: -210px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 189, 65);
+    color: #fff;
+    font-size: 18px;
+    font-weight:bolder
+ }
