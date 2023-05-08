@@ -9,18 +9,17 @@ import FAQ from "./components/faqContainer/FAQ.jsx";
 import ContactUs from "./components/contactus/ContactUs.jsx";
 import Footer from "./components/Footer/Footer.jsx"
 // import Header from './Header';
-import {BrowserRouter,Routes,Route} from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      
      <Navbar/>
      <Header/>
     <TrendingPack/>
      <FAQ/>
     <ContactUs/>
     <Footer/>
-      </BrowserRouter>
+     
     </div>
   );
 }

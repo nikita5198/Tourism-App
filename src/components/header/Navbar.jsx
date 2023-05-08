@@ -39,7 +39,7 @@ function Navbar() {
             <li>
               <select name="" id="" style={{border:"none",width:"100px",fontSize:"16px",cursor:"pointer"}}>
               <option value="">Contact Us</option>
-                <option value=""><AiTwotonePhone/> 1800110139</option>
+                <option value=""><AiTwotonePhone/> <a href="tel:1800110139">1800110139</a></option>
                 <option value=""><AiTwotonePhone/> 0755-6698100-4090400</option>
                 <option value=""><MdEmail/>tourism@irctc.com</option>
               </select>

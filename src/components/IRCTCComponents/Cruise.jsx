@@ -1,9 +1,10 @@
 import React from 'react'
-
+import './cruise.css'
 const Cruise = () => {
   return (
     <div>
-      cruise
+            <div className='cruiseBg'></div>
+
     </div>
   )
 }

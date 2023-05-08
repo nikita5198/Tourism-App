@@ -14,16 +14,17 @@ import Home from "../IRCTCComponents/Home";
 import Hotels from "../IRCTCComponents/Hotels"
 import Bus from "../IRCTCComponents/Bus";
 import Lounge from "../IRCTCComponents/Lounge";
+import Cruise from "../IRCTCComponents/Cruise";
 function Header() {
   return (
     <div style={{marginTop:"80px"}}>
-      {/* <Home/> */}
+      <Home/>
       {/* <Hotels/> */}
       {/* <Bus/> */}
-      <Lounge/>
-     
-
-
+      {/* <Lounge/> */}
+     {/* <Cruise/> */}
+  
+    
      {/* form and components section */}
      <div className="Home-Form-Section">
         <div className="container home-form-container">

@@ -1,0 +1,24 @@
+.cruiseBg{
+    position: relative;
+    overflow: hidden;
+    background-image: url("./bgImages/cruizBg.jpg");
+    margin-top: none;
+    width: 1658px;
+    height:299px;
+    padding: none;
+    background-position: 0px;
+    /* animation: bgMove 60s linear infinite; */
+    animation: zoom-in-zoom-out 30s ease infinite
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
