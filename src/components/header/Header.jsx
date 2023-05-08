@@ -10,19 +10,19 @@ import {GiCruiser} from 'react-icons/gi'
 import {BsTrainFreightFrontFill} from 'react-icons/bs'
 import {GiIndianPalace} from 'react-icons/gi'
 import {GiElephantHead} from 'react-icons/gi'
+import Home from "../IRCTCComponents/Home";
+import Hotels from "../IRCTCComponents/Hotels"
+import Bus from "../IRCTCComponents/Bus";
+import Lounge from "../IRCTCComponents/Lounge";
 function Header() {
   return (
     <div style={{marginTop:"80px"}}>
-    <div className="backImg">
-    <div className="plane"></div>
-        <div className="train"></div>
-        <div className="bus"></div>
-    </div>
+      {/* <Home/> */}
+      {/* <Hotels/> */}
+      {/* <Bus/> */}
+      <Lounge/>
+     
 
-    <div className="seaContainer">
-        {/* <img className="sea" src={sea} alt="sea" /> */}
-        <div className="cruise"></div>
-    </div>
 
      {/* form and components section */}
      <div className="Home-Form-Section">
