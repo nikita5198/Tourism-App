@@ -3,7 +3,7 @@
     overflow: hidden;
     background-image: url("./bgImages/Bus_Banner01\ \(1\).jpg");
     margin-top: none;
-    width: 1366px;
+    width: 1405px;
     height:350px;
     padding: none;
     background-position: 0px;
@@ -44,13 +44,51 @@
     width: 229px;
     height: 87px;
     background-image: url("./bgImages/Bus2.png");
-    animation: bus2 10s infinite linear;
+    animation: bus2 12s infinite linear;
 }
 @keyframes bus2{
     0%{
-        left: -10%;
+        left: -50%;
     }
     100%{
         left: 100%;
     }
+}
+
+.contDiv{
+    border-right: 2px solid grey;
+    width: 25%;
+}
+.gFor{
+    font-size: 16px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom:0 ;
+}
+
+.dFor{
+    font-size: 25px;
+    margin: 0 auto 10px auto;
+}
+.busButton{
+    background-color: gold;
+    padding: 8px 20px 12px 20px;
+    font-size: 17px;
+    border: none;
+    height: 10%;
+    border-radius: 40px;
+    margin-top: 13px;
+    cursor: pointer;
+    box-shadow: 4px 0px 0px 0 rgb(241, 240, 240), 0 4px 8px 4px rgb(240, 237, 237);
+
+}
+.busimgCont{  
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.busImg{
+  width: 330px;
+  border-radius: 5px;
+  /* color: rgb(68, 4, 91); */
 }

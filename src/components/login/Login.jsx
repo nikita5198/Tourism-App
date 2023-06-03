@@ -3,7 +3,7 @@ import './login.css';
 import { auth } from '../Firebase'; // Import the `auth` instance from your firebase.js file
 import { getFirestore, addDoc, collection } from 'firebase/firestore'; // Import Firestore SDK functions
 
-function Login() {
+function Login({handleCloseClick}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -66,6 +66,7 @@ function Login() {
       <div style={{ textAlign: 'center' }}>
         Not a member? Sign Up Forgot Password?
       </div>
+      <div className='closeIcon' onClick={handleCloseClick}>X</div>
     </div>
   );
 }

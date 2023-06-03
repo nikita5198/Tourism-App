@@ -5,8 +5,10 @@ import G20 from "../assets/G20-logo.webp";
 import logo2 from '../assets/img.webp'
 import {AiTwotonePhone} from 'react-icons/ai'
 import {MdEmail} from 'react-icons/md'
-import {AiOutlineClose} from 'react-icons/ai'
+// import {AiOutlineClose} from 'react-icons/ai'
+import {AiOutlineAlignLeft} from 'react-icons/ai'
 
+import '../login/login.css'
 import "./header.css";
 import Login from '../login/Login';
 import Register from '../login/Register';
@@ -37,7 +39,7 @@ function Navbar() {
          <div className="navItems">
             <ul className="list">
             <li>
-              <select name="" id="" style={{border:"none",width:"100px",fontSize:"16px",cursor:"pointer"}}>
+              <select name="" id="" style={{border:"none",width:"110px",fontSize:"16px",cursor:"pointer",outline:"none"}}>
               <option value="">Contact Us</option>
                 <option value=""><AiTwotonePhone/> <a href="tel:1800110139">1800110139</a></option>
                 <option value=""><AiTwotonePhone/> 0755-6698100-4090400</option>
@@ -46,18 +48,18 @@ function Navbar() {
             </li>
             
             <li><button onClick={handleLoginClick} style={{border:"none",fontSize:"16px",background:"white",cursor:"pointer"}}>Login</button></li>
-            <li>side</li>
+            <li style={{fontSize:"22px",fontWeight:"bolder"}}><button style={{fontSize:"22px",fontWeight:"bolder",border:"none",background:"white"}} className="sidebar"><AiOutlineAlignLeft/></button></li>
             </ul>
             <img className="logo4" src={logo2} alt="logo2" />
         </div>
       </div>
     </div>
+   
       
     {showPopup && (
         <div className="popup">
           <div className="popup-content">
-            <button className='closeBtn' onClick={handleCloseClick}><AiOutlineClose/></button>
-           <Login/>
+           <Login handleCloseClick={handleCloseClick}/>
            {/* <Register/> */}
           </div>
         </div>
